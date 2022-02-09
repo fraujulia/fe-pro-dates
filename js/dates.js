@@ -23,7 +23,7 @@ function getDay(date, lang) {
       6: 'Суббота',
     },
   };
-  return date.toLocaleDateString(lang, {weekday: 'long'});
+  return dayNames[lang][date.getDay()];
 }
 
 // Принимает объект даты, и должно вернуть компоненты даты в виде строки.
